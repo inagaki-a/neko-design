@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<title>猫 | 完全予約制・ご紹介のみのお店</title>
+<script>
+document.documentElement.className += ' js';
+setTimeout(function(){ if(!window.__nekoOK){ document.documentElement.classList.remove('js'); } }, 2500);
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== イラスト部品 (インラインSVG) ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="paw" viewBox="0 0 40 40">
+      <ellipse cx="20" cy="26" rx="10" ry="8" fill="currentColor"/>
+      <ellipse cx="7" cy="17" rx="4" ry="5.5" fill="currentColor" transform="rotate(-20 7 17)"/>
+      <ellipse cx="15" cy="8" rx="4" ry="5.5" fill="currentColor" transform="rotate(-6 15 8)"/>
+      <ellipse cx="25" cy="8" rx="4" ry="5.5" fill="currentColor" transform="rotate(6 25 8)"/>
+      <ellipse cx="33" cy="17" rx="4" ry="5.5" fill="currentColor" transform="rotate(20 33 17)"/>
+    </symbol>
+
+    <symbol id="d-sushi" viewBox="0 0 120 120">
+      <g stroke="#1B1238" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+        <rect x="16" y="62" width="88" height="36" rx="18" fill="#FFFFFF"/>
+        <path d="M10 68 C8 36 40 30 60 36 C80 30 112 36 110 68 C90 80 30 80 10 68Z" fill="#FF6F59"/>
+        <path d="M34 44 C38 54 38 62 34 72 M60 40 C64 52 64 64 60 76 M86 44 C82 54 82 62 86 72" fill="none" stroke="#FFFFFF"/>
+        <circle cx="44" cy="87" r="3" fill="#1B1238" stroke="none"/>
+        <circle cx="76" cy="87" r="3" fill="#1B1238" stroke="none"/>
+        <path d="M54 90 q6 5 12 0" fill="none" stroke-width="3"/>
+      </g>
+    </symbol>
+
+    <symbol id="d-ebi" viewBox="0 0 120 120">
+      <g stroke-linejoin="round" stroke-linecap="round">
+        <path d="M34 40 C34 14 88 12 98 44 C106 70 84 96 54 92" fill="none" stroke="#1B1238" stroke-width="34"/>
+        <path d="M34 40 C34 14 88 12 98 44 C106 70 84 96 54 92" fill="none" stroke="#FF8A5C" stroke-width="25"/>
+        <path d="M34 40 C34 14 88 12 98 44 C106 70 84 96 54 92" fill="none" stroke="#D8432E" stroke-width="25" stroke-linecap="butt" stroke-dasharray="3 13" stroke-dashoffset="-8"/>
+        <path d="M50 86 L24 80 L34 94 L22 106 L52 108 Z" fill="#FF6F59" stroke="#1B1238" stroke-width="4"/>
+        <path d="M30 26 C22 14 14 14 8 6 M40 22 C40 12 34 8 30 4" fill="none" stroke="#1B1238" stroke-width="3.5"/>
+        <circle cx="40" cy="38" r="6" fill="#FFFFFF" stroke="#1B1238" stroke-width="3"/>
+        <circle cx="41" cy="39" r="2.5" fill="#1B1238"/>
+      </g>
+    </symbol>
+
+    <symbol id="d-fish" viewBox="0 0 120 120">
+      <g stroke="#1B1238" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M92 60 L114 36 Q106 60 114 84 Z" fill="#FF6F59"/>
+        <path d="M44 36 Q60 12 82 38 Z" fill="#FFD23F"/>
+        <ellipse cx="58" cy="60" rx="42" ry="28" fill="#FF6F59"/>
+        <path d="M24 68 Q58 92 94 68 Q80 84 58 86 Q36 84 24 68Z" fill="#FFD9CF" stroke="none"/>
+        <path d="M50 44 Q58 60 50 76" fill="none"/>
+        <path d="M66 50 q6 6 0 12 M78 52 q6 6 0 12" fill="none" stroke-width="3"/>
+        <circle cx="34" cy="54" r="7" fill="#FFFFFF"/>
+        <circle cx="33" cy="54" r="3" fill="#1B1238" stroke="none"/>
+        <path d="M17 64 q4 4 9 1" fill="none" stroke-width="3"/>
+      </g>
+    </symbol>
+
+    <symbol id="d-chawan" viewBox="0 0 120 120">
+      <g stroke="#1B1238" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M42 20 q-8-7 0-14 M60 18 q-8-7 0-14 M78 20 q-8-7 0-14" fill="none" stroke-width="3.5"/>
+        <rect x="42" y="104" width="36" height="9" rx="4.5" fill="#FFFFFF"/>
+        <path d="M24 56 Q24 30 60 30 Q96 30 96 56 Z" fill="#FFD23F"/>
+        <circle cx="60" cy="29" r="6" fill="#FF6F59"/>
+        <path d="M16 56 H104 Q104 106 60 106 Q16 106 16 56Z" fill="#FFFFFF"/>
+        <path d="M18 66 H102 L99 76 H21Z" fill="#12A19A" stroke="none"/>
+        <circle cx="46" cy="90" r="3.5" fill="#1B1238" stroke="none"/>
+        <circle cx="74" cy="90" r="3.5" fill="#1B1238" stroke="none"/>
+        <path d="M54 95 q6 5 12 0" fill="none" stroke-width="3"/>
+      </g>
+    </symbol>
+
+    <symbol id="d-nabe" viewBox="0 0 120 120">
+      <g stroke="#1B1238" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M44 22 q-8-7 0-14 M62 20 q-8-7 0-14 M80 22 q-8-7 0-14" fill="none" stroke-width="3.5"/>
+        <rect x="26" y="32" width="28" height="26" rx="5" fill="#FFFFFF" transform="rotate(-8 40 45)"/>
+        <path d="M56 54 C56 28 84 24 92 34 C92 50 76 58 56 54Z" fill="#2BB673"/>
+        <circle cx="82" cy="52" r="10" fill="#FF6F59"/>
+        <path d="M12 58 H108 Q108 108 60 108 Q12 108 12 58Z" fill="#0B5C63"/>
+        <rect x="6" y="50" width="108" height="13" rx="6.5" fill="#FFD23F"/>
+        <path d="M12 72 H3 M108 72 H117" fill="none" stroke-width="6"/>
+        <circle cx="44" cy="84" r="3.5" fill="#FFFFFF" stroke="none"/>
+        <circle cx="76" cy="84" r="3.5" fill="#FFFFFF" stroke="none"/>
+        <path d="M54 90 q6 5 12 0" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+        <circle cx="36" cy="92" r="5" fill="#FF6F59" stroke="none"/>
+        <circle cx="84" cy="92" r="5" fill="#FF6F59" stroke="none"/>
+      </g>
+    </symbol>
+
+    <symbol id="d-maki" viewBox="0 0 120 120">
+      <g stroke="#1B1238" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+        <circle cx="60" cy="60" r="46" fill="#1B1238"/>
+        <circle cx="60" cy="60" r="35" fill="#FFFFFF"/>
+        <rect x="38" y="44" width="24" height="20" rx="5" fill="#FFD23F" stroke-width="3"/>
+        <circle cx="76" cy="50" r="9" fill="#FF6F59" stroke-width="3"/>
+        <circle cx="64" cy="76" r="9" fill="#2BB673" stroke-width="3"/>
+        <circle cx="44" cy="76" r="7" fill="#FF9EB5" stroke-width="3"/>
+      </g>
+    </symbol>
+
+    <symbol id="cat-side" viewBox="0 0 130 84">
+      <g stroke="#1B1238" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+        <path class="c-tail" d="M30 42 C6 44 4 12 20 12" fill="none" stroke-width="13"/>
+        <path class="c-tail" d="M30 42 C6 44 4 12 20 12" fill="none" stroke="#FF9A3C" stroke-width="6"/>
+        <rect class="leg l1" x="36" y="50" width="10" height="26" rx="5" fill="#FF9A3C"/>
+        <rect class="leg l3" x="78" y="50" width="10" height="26" rx="5" fill="#FF9A3C"/>
+        <ellipse cx="62" cy="44" rx="38" ry="20" fill="#FF9A3C"/>
+        <path d="M52 28 v8 M62 26 v9 M72 28 v8" fill="none" stroke-width="3.5"/>
+        <rect class="leg l2" x="48" y="50" width="10" height="26" rx="5" fill="#FF9A3C"/>
+        <rect class="leg l4" x="90" y="50" width="10" height="26" rx="5" fill="#FF9A3C"/>
+        <path d="M92 20 L94 2 L106 14Z M110 16 L120 2 L122 22Z" fill="#FF9A3C"/>
+        <circle cx="106" cy="32" r="18" fill="#FF9A3C"/>
+        <circle cx="112" cy="28" r="3" fill="#1B1238" stroke="none"/>
+        <path d="M122 34 h2 M118 38 q-3 3 -7 0" fill="none" stroke-width="3"/>
+      </g>
+    </symbol>
+
+    <symbol id="cat-front" viewBox="0 0 220 250">
+      <g stroke="#1B1238" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+        <g class="wag">
+          <path d="M160 214 C214 214 218 156 190 144" fill="none" stroke-width="24"/>
+          <path d="M160 214 C214 214 218 156 190 144" fill="none" stroke="#FF9A3C" stroke-width="14"/>
+        </g>
+        <path d="M46 244 C34 168 58 124 110 124 C162 124 186 168 174 244 Z" fill="#FF9A3C"/>
+        <ellipse cx="110" cy="200" rx="30" ry="40" fill="#FFFFFF" stroke="none"/>
+        <ellipse cx="86" cy="240" rx="18" ry="10" fill="#FFFFFF"/>
+        <ellipse cx="134" cy="240" rx="18" ry="10" fill="#FFFFFF"/>
+        <path d="M58 70 L54 14 L98 42Z" fill="#FF9A3C"/>
+        <path d="M162 70 L166 14 L122 42Z" fill="#FF9A3C"/>
+        <path d="M64 56 L62 30 L82 44Z" fill="#FF8A7A" stroke="none"/>
+        <path d="M156 56 L158 30 L138 44Z" fill="#FF8A7A" stroke="none"/>
+        <ellipse cx="110" cy="88" rx="60" ry="50" fill="#FF9A3C"/>
+        <path d="M110 40 v14 M96 42 v11 M124 42 v11" fill="none" stroke-width="4"/>
+        <ellipse cx="86" cy="90" rx="8" ry="10" fill="#1B1238" stroke="none"/>
+        <ellipse cx="134" cy="90" rx="8" ry="10" fill="#1B1238" stroke="none"/>
+        <circle cx="89" cy="86" r="3" fill="#FFFFFF" stroke="none"/>
+        <circle cx="137" cy="86" r="3" fill="#FFFFFF" stroke="none"/>
+        <ellipse cx="70" cy="108" rx="10" ry="6" fill="#FF6F59" stroke="none" opacity=".75"/>
+        <ellipse cx="150" cy="108" rx="10" ry="6" fill="#FF6F59" stroke="none" opacity=".75"/>
+        <path d="M103 104 h14 l-7 8z" fill="#FF6F59" stroke-width="3"/>
+        <path d="M110 112 q-7 10 -16 5 M110 112 q7 10 16 5" fill="none" stroke-width="3.5"/>
+        <path d="M66 100 h-34 M66 108 l-32 9 M154 100 h34 M154 108 l32 9" fill="none" stroke-width="3"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ===== 上部レール: 猫が一緒に歩く ===== -->
+<div class="rail" id="rail">
+  <div class="rail-track" id="railTrack">
+    <svg class="rail-cat" id="railCat" viewBox="0 0 130 84" role="img" aria-label="一緒に歩く猫のイラスト"><use href="#cat-side"/></svg>
+  </div>
+  <p class="rail-label" id="railLabel" aria-live="off">表紙</p>
+  <a class="rail-btn" href="#reserve">ご予約</a>
+</div>
+
+<!-- ===== 表紙 ===== -->
+<header class="cover sec" id="top" data-chapter="表紙">
+  <div class="wrap cover-grid">
+    <div class="cover-text">
+      <p class="pill">完全予約制 ・ ご紹介のみ</p>
+      <h1 class="giant"><span class="visually-hidden">猫</span><span aria-hidden="true">猫</span></h1>
+      <p class="catch">寿司を握ってきた手で、<br>一皿ずつ。</p>
+      <p class="lead-w"><strong>すし職人</strong>の店主が営む小さなお店。<br>2名様より、前日までのご予約で<br>ランチ・ディナー営業しております</p>
+      <p class="scrollhint">スクロールすると、猫がご案内します</p>
+    </div>
+    <div class="cover-art">
+      <div class="meishi" aria-hidden="false">
+        <svg class="meishi-paw" viewBox="0 0 40 40" aria-hidden="true"><use href="#paw"/></svg>
+        <p class="m1">猫</p>
+        <p class="m2"><strong>すし職人</strong>の店主</p>
+        <p class="m3">寿司を握ってきた手で、<br>一皿ずつ。</p>
+      </div>
+      <svg class="hero-cat" viewBox="0 0 220 250" role="img" aria-label="ちょこんと座る猫のイラスト"><use href="#cat-front"/></svg>
+      <div class="hill" aria-hidden="true"></div>
+    </div>
+  </div>
+  <ol class="toc" aria-label="ページの目次">
+    <li><a href="#intro">はじまり</a></li>
+    <li><a href="#lunch">ランチ</a></li>
+    <li><a href="#dinner">ディナー</a></li>
+    <li><a href="#special">特別なコース</a></li>
+    <li><a href="#guide">ご利用案内</a></li>
+    <li><a href="#reserve">ご予約</a></li>
+  </ol>
+</header>
+<div class="wave w-teal-coral" aria-hidden="true"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0 60 V28 C150 -6 300 -6 450 28 S750 62 900 28 S1100 -4 1200 20 V60Z"/></svg></div>
+
+<main>
+
+<!-- ===== 1 はじまり ===== -->
+<section class="sec s-coral" id="intro" data-chapter="はじまり">
+  <div class="pawrow rv" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="pageno"><b>1</b> ページめ</p>
+    <h2 class="ch">はじまり、はじまり</h2>
+    <div class="intro-grid">
+      <div class="windows">
+        <figure class="win w1 rv"><img src="images/neko1.png" alt="ごろんとくつろぐ猫"></figure>
+        <figure class="win w2 rv"><img src="images/neko2.png" alt="こちらを見つめる猫"></figure>
+      </div>
+      <div class="panel rv">
+        <p class="intro-copy">すし職人として魚と向き合ってきた店主が、いただいたご予約の分だけ仕入れ、仕込み、一品ずつ仕上げます。ご紹介でお越しのお客様に、気がねなく、おなかいっぱい楽しんでいただきたい。そんな思いで営む、小さなお店です。</p>
+        <p>ランチは<strong>コース料理のみ</strong>、ディナーは<strong>一品料理</strong>もたくさんご用意しております。</p>
+        <p class="note">ご紹介のみで営業しているお店のため、住所と電話番号は掲載しておりません。</p>
+      </div>
+    </div>
+    <div class="two-pages">
+      <div class="page-l rv">
+        <h3 class="sub">三つの、おもい</h3>
+        <ol class="mini">
+          <li><b>ご紹介の方だけを、大切に。</b><span>看板も住所も出さず、ご紹介のお客様だけをお迎えします。顔の見える関係の中で、一組ずつ丁寧に。</span></li>
+          <li><b>しっかり、おなかいっぱい。</b><span>1,000円のランチにも寿司がつきます。ディナーは「ボリューム満点」。遠慮せず、満足して帰ってほしい。</span></li>
+          <li><b>すし職人の目で、魚を。</b><span>西京焼、煮付け、ホイル焼、お造り、お寿司。魚は店主が選び、切り、焼き、煮ます。</span></li>
+        </ol>
+      </div>
+      <div class="page-r rv">
+        <h3 class="sub">三つの、くふう</h3>
+        <ol class="mini">
+          <li><b>完全予約制：ご予約分だけ仕入れる。</b><span>前日までのご予約をいただくことで、必要な分だけを新鮮なうちに仕込めます。</span></li>
+          <li><b>一つのコースで、いろいろな味を。</b><span>寿司、揚げ物、焼き物、煮物、デザートまで、飽きずに楽しめる組み立てに。</span></li>
+          <li><b>コース名は動物たち。</b><span>こねこ、こぐま、うさぎ、パンダ…。選ぶところから楽しんでもらえるよう、遊び心を添えています。</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="wave w-coral-yellow" aria-hidden="true"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0 60 V30 C200 64 380 0 600 26 S1000 62 1200 14 V60Z"/></svg></div>
+
+<!-- ===== 2 ランチ ===== -->
+<section class="sec s-yellow" id="lunch" data-chapter="ランチ">
+  <div class="pawrow rv" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="pageno"><b>2</b> ページめ</p>
+    <h2 class="ch">ランチ <small>11:00 – 15:00 ／ コース料理のみ</small></h2>
+
+    <article class="spread rv">
+      <div class="art"><svg viewBox="0 0 300 260" role="img" aria-label="茶碗蒸しのイラスト"><circle class="blob b-white" cx="150" cy="130" r="118"/><g class="dish" style="--i:0"><use href="#d-chawan" x="60" y="40" width="180" height="180"/></g></svg></div>
+      <div class="txt panel">
+        <p class="tag">全コース共通</p>
+        <h3>まずは、ごあいさつの一品</h3>
+        <p>各コースにサラダ・お魚の西京焼・海鮮ホイル焼・茶碗蒸し・お吸い物・デザートが付きます。<br>
+        <span class="small">※マンモス・海老フルコースには付いていません</span></p>
+        <p class="service">ランチサービス：ドリンク全て <strong>100円引き</strong></p>
+      </div>
+    </article>
+
+    <article class="spread rv">
+      <div class="art"><svg viewBox="0 0 300 260" role="img" aria-label="お寿司3貫のイラスト"><circle class="blob b-mint" cx="150" cy="130" r="118"/>
+        <g class="dish" style="--i:0"><use href="#d-sushi" x="82" y="28" width="120" height="120"/></g>
+        <g class="dish" style="--i:1"><use href="#d-sushi" x="30" y="108" width="120" height="120"/></g>
+        <g class="dish" style="--i:2"><use href="#d-sushi" x="150" y="112" width="120" height="120"/></g></svg></div>
+      <div class="txt panel">
+        <h3>こねこ</h3>
+        <p class="price"><b>1,000</b>円</p>
+        <p>白身魚の香梅天<br>お寿司 3貫</p>
+      </div>
+    </article>
+
+    <article class="spread flip rv">
+      <div class="art"><svg viewBox="0 0 300 260" role="img" aria-label="海老とお寿司のイラスト"><circle class="blob b-white" cx="150" cy="130" r="118"/>
+        <g class="dish" style="--i:0"><use href="#d-ebi" x="62" y="14" width="170" height="170"/></g>
+        <g class="dish" style="--i:1"><use href="#d-sushi" x="26" y="150" width="96" height="96"/></g>
+        <g class="dish" style="--i:2"><use href="#d-sushi" x="176" y="150" width="96" height="96"/></g></svg></div>
+      <div class="txt panel">
+        <p class="tag hot">一番人気</p>
+        <h3>こぐま</h3>
+        <p class="price"><b>1,500</b>円</p>
+        <p>海老マヨネーズ<br>お寿司 4貫</p>
+      </div>
+    </article>
+
+    <article class="spread rv">
+      <div class="art"><svg viewBox="0 0 300 260" role="img" aria-label="真鯛と海老とお寿司のイラスト"><circle class="blob b-mint" cx="150" cy="130" r="118"/>
+        <g class="dish" style="--i:0"><use href="#d-fish" x="50" y="16" width="190" height="190"/></g>
+        <g class="dish" style="--i:1"><use href="#d-ebi" x="14" y="148" width="100" height="100"/></g>
+        <g class="dish" style="--i:2"><use href="#d-sushi" x="180" y="152" width="100" height="100"/></g></svg></div>
+      <div class="txt panel">
+        <h3>ね　こ</h3>
+        <p class="price"><b>2,000</b>円</p>
+        <p>真鯛の煮付け<br>海老マヨネーズ<br>お寿司 6貫</p>
+      </div>
+    </article>
+
+    <article class="spread flip rv">
+      <div class="art"><svg viewBox="0 0 300 260" role="img" aria-label="みんなでシェアする大皿のイラスト"><circle class="blob b-white" cx="150" cy="130" r="118"/>
+        <g class="dish" style="--i:0"><use href="#d-fish" x="20" y="30" width="130" height="130"/></g>
+        <g class="dish" style="--i:1"><use href="#d-ebi" x="150" y="26" width="120" height="120"/></g>
+        <g class="dish" style="--i:2"><use href="#d-maki" x="40" y="146" width="100" height="100"/></g>
+        <g class="dish" style="--i:3"><use href="#d-sushi" x="160" y="150" width="100" height="100"/></g></svg></div>
+      <div class="txt panel">
+        <p class="tag">4〜6名様にオススメ（シェア形式）</p>
+        <h3>マンモス</h3>
+        <p class="price"><b>10,000</b>円</p>
+        <p>海鮮ニャンバーグ・和牛オムレツ・ぶりカマ焼・真鯛煮付け・チューリップ・海老マヨネーズ・うなぎ蒲焼・やさいサラダ・ごはん・お吸い物・デザート</p>
+      </div>
+    </article>
+  </div>
+</section>
+<div class="wave w-yellow-teal" aria-hidden="true"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0 60 V20 C180 -4 340 56 560 28 S980 -6 1200 30 V60Z"/></svg></div>
+
+<!-- ===== 3 ディナー ===== -->
+<section class="sec s-teal" id="dinner" data-chapter="ディナー">
+  <div class="pawrow rv" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="pageno"><b>3</b> ページめ</p>
+    <h2 class="ch">ディナー <small>16:00 – 24:00</small></h2>
+    <p class="lead">お席だけのご予約も大歓迎です。コース料理をご希望の場合のみ、ご予約時にご注文ください。</p>
+
+    <article class="spread rv">
+      <div class="art"><svg viewBox="0 0 300 260" role="img" aria-label="お魚と海老のイラスト"><circle class="blob b-yellow" cx="150" cy="130" r="118"/>
+        <g class="dish" style="--i:0"><use href="#d-fish" x="48" y="22" width="190" height="190"/></g>
+        <g class="dish" style="--i:1"><use href="#d-ebi" x="170" y="140" width="106" height="106"/></g>
+        <g class="dish" style="--i:2"><use href="#d-chawan" x="24" y="148" width="96" height="96"/></g></svg></div>
+      <div class="txt panel">
+        <p class="tag">平日限定・2時間制</p>
+        <h3>うさぎ</h3>
+        <p class="price"><b>2,000</b>円</p>
+        <p>お魚の西京焼・真鯛の煮付け・海鮮ホイル焼・本マグロのカツ・海老マヨネーズ・アワビとキノコのバター焼・やさいサラダ・おにぎり・お吸い物・デザート</p>
+      </div>
+    </article>
+
+    <article class="spread flip rv">
+      <div class="art"><svg viewBox="0 0 300 260" role="img" aria-label="お寿司や海老や茶碗蒸しのイラスト"><circle class="blob b-yellow" cx="150" cy="130" r="118"/>
+        <g class="dish" style="--i:0"><use href="#d-sushi" x="26" y="26" width="120" height="120"/></g>
+        <g class="dish" style="--i:1"><use href="#d-ebi" x="150" y="20" width="124" height="124"/></g>
+        <g class="dish" style="--i:2"><use href="#d-chawan" x="34" y="146" width="104" height="104"/></g>
+        <g class="dish" style="--i:3"><use href="#d-fish" x="150" y="150" width="112" height="112"/></g></svg></div>
+      <div class="txt panel">
+        <p class="tag">ディナー限定・ボリューム満点</p>
+        <h3>パンダ</h3>
+        <p class="price"><b>3,000</b>円</p>
+        <p class="small">2人前〜可 ／ 土日祝も大歓迎</p>
+        <p>お造り盛合せ・真鯛の西京焼・真鯛の煮付け・海鮮ホイル焼・焼海老・白身の香梅天・本まぐろカツ・やさいサラダ・和牛焼肉・お寿司5貫・茶碗蒸し・お吸い物・デザート</p>
+      </div>
+    </article>
+
+    <div class="album rv" id="alacarte">
+      <p class="tag">季節ごとに替わります</p>
+      <h3 class="album-t">アラカルト</h3>
+      <p class="album-lead">ディナーでは、コースのほかに一品料理もお選びいただけます。内容は季節ごとに入れ替わります。写真は一例です。</p>
+      <ul class="album-grid">
+        <li><figure><img src="images/dishes/sashimi-27.jpg" alt="魚の形のガラス皿に盛られた白身魚のお造り" width="900" height="500" loading="lazy"></figure></li>
+        <li><figure><img src="images/dishes/sushi-78.jpg" alt="絵付けの皿に載ったまぐろのにぎり" width="900" height="416" loading="lazy"></figure></li>
+        <li><figure><img src="images/dishes/fry-8.jpg" alt="青い角皿に盛られた揚げ物とソース" width="900" height="461" loading="lazy"></figure></li>
+        <li><figure><img src="images/dishes/grill-35.jpg" alt="鉄板に載ったハンバーグ" width="900" height="512" loading="lazy"></figure></li>
+        <li><figure><img src="images/dishes/ippin-46.jpg" alt="海老と卵黄を和えた一品" width="900" height="544" loading="lazy"></figure></li>
+        <li><figure><img src="images/dishes/sweet-23.jpg" alt="ガラスの器に盛られたぶどう" width="900" height="461" loading="lazy"></figure></li>
+        <li><figure><img src="images/dishes/sushi-88.jpg" alt="青い絵付けの角皿に盛られた巻き寿司" width="900" height="528" loading="lazy"></figure></li>
+        <li><figure><img src="images/dishes/grill-31.jpg" alt="すだちを添えた焼き魚" width="900" height="467" loading="lazy"></figure></li>
+        <li><figure><img src="images/dishes/sweet-1.jpg" alt="ガラスの器のマンゴーのデザート" width="900" height="534" loading="lazy"></figure></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<div class="wave w-teal-coral2" aria-hidden="true"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0 60 V26 C220 62 420 -2 640 24 S1020 60 1200 12 V60Z"/></svg></div>
+
+<!-- ===== 4 特別なコース ===== -->
+<section class="sec s-coral" id="special" data-chapter="特別なコース">
+  <div class="pawrow rv" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="pageno"><b>4</b> ページめ</p>
+    <h2 class="ch">特別なコース</h2>
+
+    <article class="spread rv">
+      <div class="art"><svg viewBox="0 0 300 260" role="img" aria-label="海老づくしのイラスト"><circle class="blob b-white" cx="150" cy="130" r="118"/>
+        <g class="dish" style="--i:0"><use href="#d-ebi" x="60" y="30" width="170" height="170"/></g>
+        <g class="dish" style="--i:1"><use href="#d-ebi" x="10" y="130" width="100" height="100"/></g>
+        <g class="dish" style="--i:2"><use href="#d-ebi" x="188" y="136" width="96" height="96"/></g></svg></div>
+      <div class="txt panel">
+        <p class="tag">ランチ・ディナー対応</p>
+        <h3>海老フルコース</h3>
+        <p class="price"><b>3,000</b>円</p>
+        <p class="small">ランチの場合は予約時にご注文ください</p>
+        <p>海老マヨネーズ・海老の天ぷら・赤海老のお造り・焼海老・海老のお寿司3貫・濃厚海老みそのお味噌汁</p>
+      </div>
+    </article>
+
+    <article class="spread flip rv">
+      <div class="art"><svg viewBox="0 0 300 260" role="img" aria-label="お鍋と太巻きとお魚のイラスト"><circle class="blob b-yellow" cx="150" cy="130" r="118"/>
+        <g class="dish" style="--i:0"><use href="#d-nabe" x="50" y="22" width="190" height="190"/></g>
+        <g class="dish" style="--i:1"><use href="#d-maki" x="16" y="150" width="96" height="96"/></g>
+        <g class="dish" style="--i:2"><use href="#d-fish" x="182" y="150" width="100" height="100"/></g></svg></div>
+      <div class="txt panel">
+        <p class="tag">ランチ不可・要事前注文</p>
+        <h3>猫の宴 <small>うたげ</small></h3>
+        <p class="price"><b>10,000</b>円</p>
+        <p>お造り盛合せ・和牛スタミナ湯豆腐（お鍋）・うなぎ蒲焼・海老マヨネーズ・海鮮ニャンバーグ・大きなぶりカマ・いかマヨバター焼・特大太巻寿司</p>
+      </div>
+    </article>
+
+    <article class="spread rv">
+      <div class="art"><svg viewBox="0 0 300 260" role="img" aria-label="大トロのお寿司と海老と茶碗蒸しのイラスト"><circle class="blob b-yellow" cx="150" cy="130" r="118"/>
+        <g class="dish" style="--i:0"><use href="#d-sushi" x="50" y="22" width="190" height="190"/></g>
+        <g class="dish" style="--i:1"><use href="#d-ebi" x="14" y="150" width="100" height="100"/></g>
+        <g class="dish" style="--i:2"><use href="#d-chawan" x="182" y="150" width="100" height="100"/></g></svg></div>
+      <div class="txt panel">
+        <p class="tag">ランチ不可・要事前注文</p>
+        <h3>七福猫</h3>
+        <p class="price"><b>10,000</b>円</p>
+        <p>大トロお造り・あわびバター焼・うなぎ蒲焼・海老の天ぷら・焼海老・海鮮ニャンバーグ・海鮮茶碗蒸し</p>
+      </div>
+    </article>
+  </div>
+</section>
+<div class="wave w-coral-ink" aria-hidden="true"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0 60 V22 C160 60 360 -4 600 26 S1020 56 1200 18 V60Z"/></svg></div>
+
+<!-- ===== 5 ご利用案内 ===== -->
+<section class="sec s-ink" id="guide" data-chapter="ご利用案内">
+  <div class="pawrow rv" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="pageno"><b>5</b> ページめ</p>
+    <!-- お知らせ（サンプル：管理画面で入力した内容がここに表示されます） -->
+    <h2 class="ch" id="news">お知らせ</h2>
+    <ul class="guide news-list">
+      <li class="rv"><span class="gn">11.05</span><span class="gt"><strong>年末年始の営業について</strong><br>12月31日〜1月3日は臨時休業とさせていただきます。</span></li>
+      <li class="rv"><span class="gn">10.20</span><span class="gt"><strong>秋のコースが始まりました</strong><br>季節の食材を使った特別なコースをご用意しています。</span></li>
+      <li class="rv"><span class="gn">10.01</span><span class="gt"><strong>ランチのドリンク100円引き</strong><br>ランチのお客様は、ドリンクが全て100円引きです。</span></li>
+    </ul>
+    <h2 class="ch">ご利用案内</h2>
+    <ul class="guide">
+      <li class="rv"><span class="gn">01</span><span class="gt">不定休です</span></li>
+      <li class="rv"><span class="gn">02</span><span class="gt">価格は税込です</span></li>
+      <li class="rv"><span class="gn">03</span><span class="gt">お支払いは<strong>現金のみ</strong>です</span></li>
+      <li class="rv"><span class="gn">04</span><span class="gt">ご予約・お問い合わせは <strong>13:00〜22:00</strong> にお願いします</span></li>
+      <li class="rv"><span class="gn">05</span><span class="gt">営業時間　ランチ 11:00〜15:00 ／ ディナー 16:00〜24:00</span></li>
+      <li class="rv"><span class="gn">06</span><span class="gt">臨時休業　2026年12月31日〜2027年1月3日（年末年始）</span></li>
+    </ul>
+  </div>
+</section>
+<div class="wave w-ink-yellow" aria-hidden="true"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0 60 V30 C200 -2 400 58 620 26 S1000 -4 1200 28 V60Z"/></svg></div>
+
+<!-- ===== 6 ご予約 ===== -->
+<section class="sec s-yellow" id="reserve" data-chapter="ご予約">
+  <div class="pawrow rv" aria-hidden="true"></div>
+  <div class="wrap reserve-grid">
+    <div>
+      <p class="pageno"><b>6</b> ページめ</p>
+      <h2 class="ch">ご予約について</h2>
+      <p class="lead">お電話の際に、下記をお伝えください。</p>
+      <ol class="steps">
+        <li class="rv">来店日</li>
+        <li class="rv">来店時間</li>
+        <li class="rv">ご来店人数</li>
+        <li class="rv">お名前</li>
+        <li class="rv">ランチの場合：コース名</li>
+        <li class="rv">ディナーの場合：コース、またはお席だけか</li>
+      </ol>
+    </div>
+    <div class="end rv">
+      <svg class="end-cat" viewBox="0 0 220 250" role="img" aria-label="手を振る猫のイラスト"><use href="#cat-front"/></svg>
+      <span class="btn">お電話でご予約ください</span>
+      <p class="thanks">ご予約お待ちしております</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p>© 猫　／　最後までご覧頂きありがとうございます</p>
+  <p class="small-note">※ 紹介文は仮のものです（オーナー確認前）</p>
+  <p class="end-mark">おしまい</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
