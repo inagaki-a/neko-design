@@ -30,12 +30,24 @@
   .open { display: block; text-align: center; padding: 12px; background: #222; color: #fff; text-decoration: none; }
   .open:hover { background: #444; }
   .note { max-width: 900px; margin: 0 auto; padding: 0 20px 28px; color: #555; font-size: .9rem; text-align: center; }
+  .spnote { display: none; margin-top: 6px; color: #a33; }
+  .pcnote { margin-top: 6px; }
+  .toggle .hint { display: block; margin-top: 6px; font-size: .85rem; color: #555; }
+  .mix { max-width: 900px; margin: 20px auto 0; padding: 20px; background: #fff7e0; border: 1px solid #e0c870; border-radius: 12px; }
+  .mix h2 { margin: 0 0 6px; font-size: 1.15rem; }
+  .mix p { margin: 0 0 10px; }
+  .mix table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+  .mix th, .mix td { border: 1px solid #e0c870; padding: 6px 10px; text-align: left; vertical-align: top; background: #fff; }
+  .mix th { background: #f6e9b8; white-space: nowrap; }
+  @media (max-width: 700px) { .toggle { display: none; } .spnote { display: block; } .pcnote { display: none; } }
 </style>
 </head>
 <body>
 <header>
   <h1>猫 ホームページ デザイン案（確認用）</h1>
   <p class="sub">世界観の違う6案です。小窓はスマホ幅（390px）で表示しています。「全画面で開く」で実際の大きさでも見られます。</p>
+  <p class="sub pcnote">※ <b>PCのブラウザでの閲覧をおすすめします</b>（PCとスマホの見え方を比べられます）。</p>
+  <p class="sub spnote">※ いまスマホでご覧です。各案の「全画面で開く」を押すと、そのままスマホでの実際の見え方になります。PCでの見え方は、PCでこのページを開くと確認できます。</p>
 </header>
 
 <section class="copy">
@@ -73,9 +85,24 @@
   </ol>
 </section>
 
+<section class="mix">
+  <h2>パーツの組み合わせもできます</h2>
+  <p>「全体はA案、でもこの部分はB案がいい」というご要望にも対応できます。気に入った部分があれば、別の案の部品を取り入れて、1つのサイトにまとめられます。</p>
+  <table>
+    <tr><th>D　夜の路地裏</th><td>ネオンの「猫」／暖簾をくぐる演出／黒板・行灯・提灯のメニュー</td></tr>
+    <tr><th>E　高級店</th><td>墨と金の配色／一画面一メッセージ／金線の猫／章立て</td></tr>
+    <tr><th>F　昭和レトロ</th><td>赤提灯／短冊メニュー／猫の板前／ホーロー看板</td></tr>
+    <tr><th>G　絵本</th><td>スクロールで歩く猫／料理のイラスト／ティールとコーラルの配色</td></tr>
+    <tr><th>H　ZINE</th><td>画面いっぱいの「猫」／ステッカー／蛍光色／大きな価格表示</td></tr>
+    <tr><th>I　隠れ家</th><td>障子が開く演出／横の廊下／間取り図風の線画</td></tr>
+  </table>
+  <p style="margin-top:10px">例：「Eの落ち着いた雰囲気に、Fの短冊メニューを使う」「Dの暖簾の演出とGの猫のイラスト」など。気になった部分を教えてください。</p>
+</section>
+
 <div class="toggle" role="group" aria-label="表示サイズ">
   <button type="button" id="b-sp" aria-pressed="true">スマホ幅</button>
   <button type="button" id="b-pc" aria-pressed="false">横長（PC寄り）</button>
+  <span class="hint">PCで開いたときだけ使えます（表示の幅を切り替えます）</span>
 </div>
 
 <div class="grid" id="grid">
