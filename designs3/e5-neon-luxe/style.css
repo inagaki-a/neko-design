@@ -206,3 +206,33 @@ footer p { margin: .2rem 0; }
   .js .part-kanji.reveal .neon-k { text-shadow: 0 0 2px var(--neon), 0 0 9px rgba(255,190,100,.55), 0 0 22px rgba(255,150,60,.3); }
   .steps .pawwrap { opacity: .95; }
 }
+
+/* ===== ネオンの猫たち ===== */
+.cat-wrap { display: block; line-height: 0; }
+.cat { display: block; width: 100%; height: auto; overflow: visible; }
+.cat .tubes { animation: none; }
+.cat .t { stroke-width: 2px; vector-effect: non-scaling-stroke; }
+.cat .t4 { stroke-width: 1.2px; opacity: .55; }
+.cat .tubes.face { filter: drop-shadow(0 0 2px var(--neon)) drop-shadow(0 0 5px rgba(255,190,100,.5)); }
+@media (prefers-reduced-motion: no-preference) {
+  .reveal.in .cat .tubes { animation: ignite 2.2s .3s both; }
+}
+.flip svg { transform: scaleX(-1); }
+.door-cat { margin: 1.8rem auto 2rem; }
+.c-loaf { width: 150px; } .c-sleep { width: 150px; } .c-walk { width: 190px; }
+.c-back { width: 96px; } .c-peek { width: 170px; } .c-wave { width: 104px; } .c-wave.big { width: 150px; }
+.c-fish { width: 64px; }
+.stmt { margin: 3rem auto 0; }
+.peek-div { margin: -1.6rem auto 0; position: relative; z-index: 1; padding: 0 1.4rem; }
+.peek-div .cat-wrap { margin: 0 auto; transform: translateY(1px); }
+.interlude { display: flex; justify-content: center; align-items: flex-end; gap: 1.2rem; padding: 2.6rem 1.4rem 0; margin-bottom: -1.6rem; position: relative; z-index: 1; }
+.interlude .c-walk { width: 150px; }
+.trail { display: flex; gap: 1rem; align-items: flex-end; padding-bottom: .2rem; }
+.trail .pawwrap { width: 15px; color: var(--peach); filter: drop-shadow(0 0 4px rgba(255,140,120,.55)); }
+.trail .paw { width: 15px; height: 15px; vertical-align: top; }
+.trail .tp0 { opacity: .9; transform: rotate(-80deg); } .trail .tp1 { opacity: .6; transform: translateY(-6px) rotate(-100deg); } .trail .tp2 { opacity: .3; transform: rotate(-82deg); }
+.foot-cat { margin: 0 auto 1.4rem; }
+@media (max-width: 760px) {
+  .c-walk { width: 150px; } .interlude .c-walk { width: 118px; } .c-fish { width: 48px; }
+  .c-loaf, .c-sleep { width: 124px; } .c-peek { width: 140px; }
+}
