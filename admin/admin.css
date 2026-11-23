@@ -1,0 +1,137 @@
+/* 既存サイト（style.css / paws.css）と同じ配色・書体・装飾に揃えています */
+@import url("../paws.css");
+
+:root{
+  --ink:#2b2420; --paper:#fbf6ee; --card:#ffffff; --accent:#c8553d; --accent-dark:#9c3c28;
+  --gold:#b8923a; --line:#e8dccb; --muted:#7a6a5c; --ok:#3f8f5b;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;line-height:1.7;
+  padding-bottom:calc(150px + env(safe-area-inset-bottom))}
+button,input,select,textarea{font:inherit;color:inherit}
+
+/* ---- ヘッダー（トップページのhero風） ---- */
+.top{position:relative;text-align:center;color:var(--paper);padding:26px 20px 22px;
+  background-image:var(--paw-hero),linear-gradient(160deg,#2b2420 0%,#4a3328 100%);
+  background-size:220px 220px,cover}
+.top::before{content:"";display:block;width:40px;height:40px;margin:0 auto 4px;
+  background:var(--paw-gold) center/contain no-repeat}
+.top .sub{margin:0;letter-spacing:.3em;font-size:.8rem;color:var(--gold)}
+.top h1{margin:.05em 0 0;font-size:2.6rem;letter-spacing:.2em;font-weight:700;line-height:1.3}
+.demo{position:absolute;top:12px;right:12px;background:var(--gold);color:#fff;
+  font-size:.75rem;padding:1px 12px;border-radius:999px}
+
+main{max-width:640px;margin:0 auto;padding:8px 20px 0}
+
+/* ---- 下のタブ（フッターと同じ濃い茶色） ---- */
+.tabs{position:fixed;left:0;right:0;bottom:0;z-index:6;display:flex;background:var(--ink);
+  padding-bottom:env(safe-area-inset-bottom)}
+.tabs button{flex:1;border:0;background:none;padding:8px 0 10px;font-size:.75rem;color:#cdbfae;cursor:pointer}
+.tabs button i{display:block;font-style:normal;font-size:1.35rem;line-height:1.2}
+.tabs button.on{color:var(--gold);font-weight:700}
+
+.savebar{position:fixed;left:0;right:0;bottom:calc(62px + env(safe-area-inset-bottom));z-index:6;
+  background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:space-between;
+  gap:12px;padding:8px 16px;font-size:.9rem;box-shadow:0 -2px 8px rgba(43,36,32,.2)}
+.savebar[hidden]{display:none}
+.savebar .btn.primary{background:#fff;border-color:#fff;color:var(--accent-dark)}
+
+/* ---- 見出し（朱色の下線＋肉球） ---- */
+h2.sec{display:flex;align-items:center;justify-content:space-between;gap:8px;
+  font-size:1.3rem;margin:30px 0 14px;border-bottom:2px solid var(--accent);padding-bottom:8px}
+h2.sec>span:first-child::before{content:"";display:inline-block;width:1.05em;height:1.05em;
+  margin-right:.4em;vertical-align:-.15em;background:var(--paw) center/contain no-repeat}
+.lead{color:var(--muted);font-size:.9rem;margin:16px 0 0;text-align:center}
+h2.sec+.lead{margin:-4px 0 12px;text-align:left}
+
+/* ---- ボタン（丸み＝トップの予約ボタンと同じ） ---- */
+.btn{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 20px;cursor:pointer;
+  font-size:.95rem;min-height:42px}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.primary:hover{background:var(--accent-dark)}
+.btn.danger{color:#b3261e;border-color:#e6b8b4}
+.btn.small{padding:3px 14px;min-height:34px;font-size:.85rem}
+.btn:active{transform:translateY(1px)}
+
+/* ---- カード（トップのメニューカードと同じ） ---- */
+.card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:18px;
+  padding:14px 14px;margin-bottom:12px;display:flex;gap:12px;align-items:center;
+  box-shadow:0 2px 6px rgba(43,36,32,.06)}
+.card.off{background:#f4eee4}
+.card.off .main,.card.off .thumb{opacity:.55}
+.card .thumb{width:64px;height:64px;border-radius:12px;background:#f1e8da;flex:none;object-fit:cover;
+  display:flex;align-items:center;justify-content:center;font-size:1.6rem}
+.card .main{flex:1;min-width:0}
+.card .name{font-weight:700;font-size:1.1rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card .sub{color:var(--muted);font-size:.8rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card .price{color:var(--accent-dark);font-weight:700;font-size:1.15rem;line-height:1.4}
+.card .side{display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+.tag{display:inline-block;font-size:.7rem;background:var(--ink);color:var(--paper);
+  padding:0 10px;border-radius:999px;margin-right:6px;vertical-align:2px}
+.tag.pub{background:var(--ok)}
+.mv{display:flex;gap:4px}
+.mv button{width:34px;height:34px;border:1px solid var(--line);background:#fff;border-radius:999px;cursor:pointer;font-size:.75rem}
+.mv button:disabled{opacity:.3}
+
+.sw{position:relative;display:inline-block;width:48px;height:28px;flex:none}
+.sw input{opacity:0;width:0;height:0}
+.sw span{position:absolute;inset:0;background:#cfc5b8;border-radius:99px;transition:.15s;cursor:pointer}
+.sw span:before{content:"";position:absolute;width:22px;height:22px;left:3px;top:3px;background:#fff;
+  border-radius:50%;transition:.15s}
+.sw input:checked+span{background:var(--accent)}
+.sw input:checked+span:before{transform:translateX(20px)}
+
+/* ---- 写真（トップの写真と同じ角丸・影） ---- */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.pcard{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;
+  box-shadow:0 2px 6px rgba(43,36,32,.06)}
+.pcard img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:#f1e8da}
+.pcard .pb{padding:10px;display:flex;flex-direction:column;gap:8px}
+.pcard .alt{font-size:.8rem;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pcard .row{display:flex;gap:6px;justify-content:space-between;align-items:center}
+
+/* ---- フォーム ---- */
+.form label{display:block;margin:14px 0 4px;font-size:.85rem;font-weight:700}
+.form label .opt{font-weight:400;color:var(--muted)}
+.form input[type=text],.form input[type=number],.form input[type=date],.form textarea,.form select{
+  width:100%;border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:#fff;font-size:16px}
+.form textarea{min-height:90px;resize:vertical}
+.form .inline{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:16px}
+.form .inline b{font-size:.95rem}
+.form details{margin-top:16px;border:1px dashed var(--gold);border-radius:12px;padding:8px 12px}
+.form details summary{cursor:pointer;color:var(--muted);font-size:.9rem}
+.form .actions{display:flex;gap:10px;margin-top:22px}
+.form .actions .btn{flex:1}
+.pick{display:flex;gap:12px;align-items:center}
+.pick img,.pick .noimg{width:84px;height:84px;border-radius:12px;object-fit:cover;background:#f1e8da;
+  display:flex;align-items:center;justify-content:center;font-size:.75rem;color:var(--muted);flex:none;text-align:center}
+
+.hrow{background:#fff;border:1px solid var(--line);border-radius:18px;padding:12px 14px;margin-bottom:12px;
+  box-shadow:0 2px 6px rgba(43,36,32,.06)}
+.hrow label{display:block;font-size:.85rem;font-weight:700;margin-bottom:4px}
+.hrow input[type=text]{width:100%;border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:16px}
+.closure{display:flex;align-items:center;gap:10px;justify-content:space-between}
+.closure .d{font-weight:700}
+.closure .r{color:var(--muted);font-size:.85rem}
+.empty{text-align:center;color:var(--muted);padding:24px 0}
+
+/* ---- 編集シート ---- */
+.sheet{position:fixed;inset:0;z-index:20}
+.sheet[hidden]{display:none}
+.sheet-bg{position:absolute;inset:0;background:rgba(43,36,32,.55)}
+.sheet-box{position:absolute;left:0;right:0;bottom:0;max-width:640px;margin:0 auto;background:var(--paper);
+  border-radius:24px 24px 0 0;max-height:92vh;overflow:auto;padding:0 20px calc(22px + env(safe-area-inset-bottom))}
+.sheet-head{position:sticky;top:0;background:var(--paper);display:flex;justify-content:space-between;
+  align-items:center;padding:16px 0 8px;font-size:1.2rem;border-bottom:2px solid var(--accent)}
+.sheet-head .x{border:0;background:none;font-size:1.2rem;cursor:pointer;padding:4px 8px}
+
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(130px + env(safe-area-inset-bottom));
+  z-index:30;background:var(--ink);color:var(--paper);padding:10px 18px;border-radius:999px;font-size:.85rem;
+  max-width:90vw;text-align:center;border:1px solid var(--gold)}
+.toast[hidden]{display:none}
+
+.reset{display:block;margin:32px auto 0;background:none;border:0;color:var(--muted);
+  text-decoration:underline;font-size:.8rem;cursor:pointer}
+.pcard.off img{opacity:.45}

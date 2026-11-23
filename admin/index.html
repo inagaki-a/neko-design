@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>お店の更新ページ（デモ）</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<header class="top">
+  <p class="sub">お店の更新ページ</p>
+  <h1>猫</h1>
+  <span class="demo">デモ</span>
+</header>
+
+<main id="view"></main>
+
+<div id="savebar" class="savebar" hidden>
+  <span>未保存の変更があります</span>
+  <button class="btn primary" data-act="save">まとめて保存</button>
+</div>
+
+<nav class="tabs">
+  <button data-tab="menu" class="on"><i>🍽</i>メニュー</button>
+  <button data-tab="photos"><i>📷</i>写真</button>
+  <button data-tab="dishes"><i>🍣</i>一品</button>
+  <button data-tab="news"><i>📢</i>お知らせ</button>
+  <button data-tab="hours"><i>🕒</i>営業</button>
+</nav>
+
+<div id="sheet" class="sheet" hidden>
+  <div class="sheet-bg" data-act="sheet-close"></div>
+  <div class="sheet-box">
+    <div class="sheet-head">
+      <b id="sheet-title"></b>
+      <button class="x" data-act="sheet-close" aria-label="閉じる">✕</button>
+    </div>
+    <div id="sheet-body"></div>
+  </div>
+</div>
+
+<div id="toast" class="toast" hidden></div>
+<input type="file" id="file" accept="image/*" hidden>
+
+<!-- 既存サイトのデータを初期値として読み込む -->
+<script src="../menu-data.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
